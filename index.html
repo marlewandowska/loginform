@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="formularz form-login">
+        <div class="logowanie">
+            <form action="login.php" method="post">
+                <label>
+                    E-mail:
+                    <input type="email" name="log-email" required>
+                </label>
+                <br>
+                <label>
+                    Hasło:
+                    <input type="password" name="log-haslo" required>
+                </label>
+                <br>
+                <button type="submit">Zaloguj</button><br>
+            </form>
+            <label>Nie masz konta?</label> <button class="rejestracja-btn">Zarejestruj się</button>
+        </div>
+    
+        <div class="rejestracja widok">
+            <form action="register.php" method="post">
+                <label>
+                    Nazwa:
+                    <input type="text" name="reg-nazwa" required>
+                </label>
+                <br>
+                <label>
+                    E-mail:
+                    <input type="email" name="reg-email" required>
+                </label>
+                <br>
+                <label>
+                    Hasło:
+                    <input type="password" name="reg-haslo" required>
+                </label>
+                <br>
+                <button type="submit">Zarejestruj</button><br>
+            </form>
+            <label>Masz już konto?</label> <button class="logowanie-btn">Zaloguj się</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
