@@ -50,3 +50,7 @@ else
 mysqli_close($polacz);
 
 ?>
+
+<form action="index.html">
+    <p><input type="submit" value="Powrót na stronę logowania" /></p>
+</form>
